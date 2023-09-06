@@ -26,7 +26,7 @@ const AdminLogin = () => {
 			// if the user is logged in their jwt token is set in local storage
 			localStorage.setItem("token", data.admin);
 			alert(`Successfully logged in.`); // user is logged in
-			window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard";
+			window.location.href = "/admin-dashboard";
 		} else {
 			// if user entered information incorrectly
 			alert(`Please retry username or password!`);
@@ -48,7 +48,7 @@ const AdminLogin = () => {
 		};
 		if (localStorage.getItem("token")) {
 			// if local storage gets token
-			window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard"; // take user to admin dashboard
+			window.location.href = "/admin-dashboard"; // take user to admin dashboard
 		} else {
 			createDefaultAdmin(); // create default admin
 		}
