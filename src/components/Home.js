@@ -7,12 +7,12 @@ const Home = () => {
 		<div data-testid="homepageTest">
 			{" "}
 			{/* testing id */}
-			<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/appointments"}>
+			<Link to={"/appointments"}>
 				{" "}
 				<button className="view-appointment">View appointments</button>{" "}
 			</Link>
 			{/* link to appointment page */}
-			<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/admin-login"}>
+			<Link to={"/admin-login"}>
 				{" "}
 				<button className="admin-button">I am an admin</button>{" "}
 			</Link>
