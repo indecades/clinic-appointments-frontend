@@ -48,7 +48,7 @@ const Appointments = () => {
 		>
 			{" "}
 			{/* testing id */}
-			<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/admin-login"}>
+			<Link to={"/admin-login"}>
 				{" "}
 				<button className="login-as-admin-button">Login as admin</button>{" "}
 			</Link>
