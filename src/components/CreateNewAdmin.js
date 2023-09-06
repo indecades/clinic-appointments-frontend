@@ -86,7 +86,7 @@ const CreateNewAdmin = () => {
 					Submit
 				</button>
 				{/* submit button */}
-				<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard"}>
+				<Link to={"/admin-dashboard"}>
 					<p className="link-to-dashboard">Go back to admin dashboard</p>
 				</Link>
 				{/* takes new admin to dashboard */}
