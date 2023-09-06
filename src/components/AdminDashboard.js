@@ -44,7 +44,7 @@ const AdminDashboard = () => {
 			const user = jwt_decode(token); // decodes token
 			if (!user) {
 				localStorage.removeItem("token"); // removes token
-				window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-login"; // takes user to login page if user is not signed in
+				window.location.href = "/admin-login"; // takes user to login page if user is not signed in
 			} else {
 				populateAppointments();
 			}
@@ -131,7 +131,7 @@ const AdminDashboard = () => {
 
 	const handleSignout = () => {
 		localStorage.removeItem("token"); // removes token from local storage
-		window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-login"; //takes user to login page
+		window.location.href = "/admin-login"; //takes user to login page
 	};
 	const adminData = adminAppointments.map((appointment) => {
 		// maps through appointments
