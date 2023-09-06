@@ -186,7 +186,7 @@ const AdminDashboard = () => {
 				<Col md={10}>
 					{" "}
 					{/* column 10/12 */}
-					<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/create-new-admin"}>
+					<Link to={"/create-new-admin"}>
 						{" "}
 						{/* link to create admin page */}
 						<button className="create-new-admin">Create new admin</button>
