@@ -45,7 +45,7 @@ const CreateNewAppointment = () => {
 				type,
 			}),
 		});
-		window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard"; // refreshes dashboard to display added appointment
+		window.location.href = "/admin-dashboard"; // refreshes dashboard to display added appointment
 	};
 
 	return (
