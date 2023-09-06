@@ -95,7 +95,7 @@ const AdminLogin = () => {
 					Submit
 				</button>
 				<br />
-				<Link to={"https://clinic-appointment-backend-2dvo.onrender.com/appointments"}>
+				<Link to={"/appointments"}>
 					<p className="admin-login-link">Go back to appointments?</p>
 				</Link>
 				{/* if user does not have an account they can easily be redirected to register page */}
