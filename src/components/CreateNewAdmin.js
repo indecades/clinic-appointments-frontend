@@ -16,7 +16,7 @@ const CreateNewAdmin = () => {
 			if (!user) {
 				// if the user is not registered
 				localStorage.removeItem("token"); // removes user token if user does not have access to the page
-				window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-login"; // takes user to login page if user is not signed in
+				window.location.href = "/admin-login"; // takes user to login page if user is not signed in
 			}
 		}
 	}, []); // useEffect only runs once
@@ -37,7 +37,7 @@ const CreateNewAdmin = () => {
 		if (data.status === "ok") {
 			// if data status from backend and frontend is read as 'ok'
 			alert("new admin created"); // the new admin is created
-			window.location.href = "https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard"; //admin is then taken to admin dashboard
+			window.location.href = "/admin-dashboard"; //admin is then taken to admin dashboard
 		} else {
 			alert("Something went wrong please retry."); // else the user has to retry
 		}
