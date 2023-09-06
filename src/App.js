@@ -13,11 +13,11 @@ function App() {
   return ( 
     <div className="App">
       <Routes>
-        <Route path='https://clinic-appointment-backend-2dvo.onrender.com/' element={<Home />}></Route>
-        <Route path='https://clinic-appointment-backend-2dvo.onrender.com/appointments' element={<Appointments />}></Route>
-        <Route path='https://clinic-appointment-backend-2dvo.onrender.com/admin-login' element={<AdminLogin />}></Route>
-        <Route path='https://clinic-appointment-backend-2dvo.onrender.com/admin-dashboard' element={<AdminDashboard />}></Route>
-        <Route path='https://clinic-appointment-backend-2dvo.onrender.com/create-new-admin' element={<CreateNewAdmin />}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/appointments' element={<Appointments />}></Route>
+        <Route path='/admin-login' element={<AdminLogin />}></Route>
+        <Route path='/admin-dashboard' element={<AdminDashboard />}></Route>
+        <Route path='/create-new-admin' element={<CreateNewAdmin />}></Route>
       </Routes>
     </div>
   );
